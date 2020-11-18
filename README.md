@@ -5,10 +5,30 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2020/21
 * [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/NikiFMF10/APPR-2020-21/master?urlpath=shiny/APPR-2020-21/projekt.Rmd) Shiny
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/NikiFMF10/APPR-2020-21/master?urlpath=rstudio) RStudio
 
-## Tematika
+## Analiza velike četverice teniških igralcev
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+Pri tem projektu bom analiziral veliko četverico teniških igralcev ("Big Four"), med katere spadajo Roger Federer, Novak Djoković, Rafael Nadal in Andy Murray.
+
+Primerjal bom: 
+* Število zmag in porazov, ki so jih dosegli na različnih površinah (trda podlaga,   trava, pesek), 
+* Število zmag in porazov na največjih turnirjih (Grand Slam, ATP Masters 1000), 
+* Število osvojenih turnirjev na omenjenih podlagah,
+* Število zmag in porazov ter osvojenih turnirjev v dvojicah,
+* Medsebojna srečanja (zmage, porazi, podlaga), 
+* Njihova najbolj znamenita medsebojna srečanja,
+* Koliko časa so preživeli kot številka 1 na svetu,
+* število doseženih asov,
+* Številne rekorde, ki jih imajo v lasti,
+
+Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevlada sam vrh tenisa tako dolgo.
+
+Viri:
+https://en.wikipedia.org/wiki/Big_Four_(tennis)
+https://en.wikipedia.org/wiki/Roger_Federer
+https://en.wikipedia.org/wiki/Rafael_Nadal
+https://en.wikipedia.org/wiki/Novak_Djokovic
+https://en.wikipedia.org/wiki/Andy_Murray
+https://www.ultimatetennisstatistics.com/
 
 ## Program
 
