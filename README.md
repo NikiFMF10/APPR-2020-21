@@ -10,19 +10,20 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2020/21
 Pri tem projektu bom analiziral veliko četverico teniških igralcev ("Big Four"), med katere spadajo Roger Federer, Novak Djoković, Rafael Nadal in Andy Murray.
 
 Primerjal bom: 
-* Število zmag in porazov, ki so jih dosegli na različnih površinah (trda podlaga,   trava, pesek), 
+* Število zmag in porazov, ki so jih dosegli na različnih površinah (trda podlaga, trava, pesek), 
 * Število zmag in porazov na največjih turnirjih (Grand Slam, ATP Masters 1000), 
 * Število osvojenih turnirjev na omenjenih podlagah,
-* Število zmag in porazov ter osvojenih turnirjev v dvojicah,
 * Medsebojna srečanja (zmage, porazi, podlaga), 
 * Njihova najbolj znamenita medsebojna srečanja,
 * Koliko časa so preživeli kot številka 1 na svetu,
 * Število doseženih asov,
 * Številne rekorde, ki jih imajo v lasti,
+* in še preostale pomembne statistične podatke
 
 Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevlada sam vrh tenisa tako dolgo.
 
 Viri:
+
 https://en.wikipedia.org/wiki/Big_Four_(tennis)
 
 https://en.wikipedia.org/wiki/Roger_Federer
