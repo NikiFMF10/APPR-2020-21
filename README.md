@@ -17,17 +17,22 @@ Primerjal bom:
 * Medsebojna srečanja (zmage, porazi, podlaga), 
 * Njihova najbolj znamenita medsebojna srečanja,
 * Koliko časa so preživeli kot številka 1 na svetu,
-* število doseženih asov,
+* Število doseženih asov,
 * Številne rekorde, ki jih imajo v lasti,
 
 Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevlada sam vrh tenisa tako dolgo.
 
 Viri:
 https://en.wikipedia.org/wiki/Big_Four_(tennis)
+
 https://en.wikipedia.org/wiki/Roger_Federer
+
 https://en.wikipedia.org/wiki/Rafael_Nadal
+
 https://en.wikipedia.org/wiki/Novak_Djokovic
+
 https://en.wikipedia.org/wiki/Andy_Murray
+
 https://www.ultimatetennisstatistics.com/
 
 ## Program
