@@ -2,6 +2,12 @@
 
 sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 
+#Uvozimo podatke iz csv datotek
+Djoković_rekordi.data <- read.csv('podatki/Djoković Records.csv')
+Federer_rekordi.data <- read.csv('podatki/Federer Records.csv')
+Nadal_rekordi.data <- read.csv('podatki/Nadal Records.csv')
+Murray_rekordi.data <- read.csv('podatki/Murray Records.csv')
+
 # Funkcija, ki uvozi občine iz Wikipedije
 uvozi.obcine <- function() {
   link <- "http://sl.wikipedia.org/wiki/Seznam_ob%C4%8Din_v_Sloveniji"
