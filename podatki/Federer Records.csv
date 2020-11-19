@@ -1,0 +1,16 @@
+id,name,value,details_0
+GrandSlamTitles,Most Grand Slam Titles,20,
+TourFinalsTitles,Most Tour Finals Titles,6,
+ATP500Titles,Most ATP 500/CS Titles,24,
+HardTitles,Most Hard Titles,71,
+GrassTitles,Most Grass Titles,19,
+HardGrandSlamTitles,Most Hard Grand Slam Titles,11,
+GrassGrandSlamTitles,Most Grass Grand Slam Titles,8,
+GrassBigTitles,"Most Grass Big Titles (Grand Slam, All Tour Finals, Masters, Olympics)",8,
+TournamentATP250Titles,Most ATP 250/WS Titles at Single Tournament,7,Halle
+DifferentGrandSlamTitles,Most Different Grand Slam Titles,4,
+TourFinalsTitlesDifficultyAdjusted,Most Tour Finals Titles Adjusted by Difficulty,5.83,6
+GrassGrandSlamTitlesDifficultyAdjusted,Most Grass Grand Slam Titles Adjusted by Difficulty,7.96,8
+GrandSlamFinals,Most Grand Slam Finals,31,
+TourFinalsFinals,Most Tour Finals Finals,10,
+BigFinals,"Most Big Finals (Grand Slam, All Tour Finals, Masters, Olympics)",92,
