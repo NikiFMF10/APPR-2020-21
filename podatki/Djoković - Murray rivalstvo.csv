@@ -1,0 +1,16 @@
+date,tournament,level,bestOf,surface,indoor,speed,round,winner_name,winner_seed,winner_country_name,winner_country_id,winner_rank,winner_eloRatingDelta,winner_eloRating,loser_name,loser_seed,loser_country_name,loser_country_id,loser_rank,loser_eloRatingDelta,loser_eloRating,score,h2hWL,h2hWLPct
+2017-01-02,Doha,B,3,H,false,61,F,Novak Djokovic,2,Serbia,SRB,2,9,2529,Andy Murray,1,United Kingdom,GBR,1,-9,2503,6-3 5-7 6-4,25-11,69.4% - 30.6%
+2016-11-14,Tour Finals,F,3,H,true,68,F,Andy Murray,1,United Kingdom,GBR,1,15,2485,Novak Djokovic,2,Serbia,SRB,2,-15,2543,6-3 6-4,24-11,68.6% - 31.4%
+2016-05-23,Roland Garros,G,5,C,false,41,F,Novak Djokovic,1,Serbia,SRB,1,8,2614,Andy Murray,2,United Kingdom,GBR,2,-8,2426,3-6 6-1 6-2 6-4,24-10,70.6% - 29.4%
+2016-05-09,Rome Masters,M,3,C,false,47,F,Andy Murray,2,United Kingdom,GBR,3,19,2385,Novak Djokovic,1,Serbia,SRB,1,-20,2627,6-3 6-3,23-10,69.7% - 30.3%
+2016-05-02,Madrid Masters,M,3,C,false,69,F,Novak Djokovic,1,Serbia,SRB,1,5,2615,Andy Murray,2,United Kingdom,GBR,2,-5,2381,6-2 3-6 6-3,23-9,71.9% - 28.1%
+2016-01-18,Australian Open,G,5,H,false,75,F,Novak Djokovic,1,Serbia,SRB,1,7,2622,Andy Murray,2,United Kingdom,GBR,2,-7,2400,6-1 7-5 7-6(3),22-9,71.0% - 29.0%
+2015-11-02,Paris Masters,M,3,H,true,71,F,Novak Djokovic,1,Serbia,SRB,1,6,2596,Andy Murray,2,United Kingdom,GBR,3,-6,2402,6-2 6-4,21-9,70.0% - 30.0%
+2015-10-11,Shanghai Masters,M,3,H,false,73,SF,Novak Djokovic,1,Serbia,SRB,1,5,2582,Andy Murray,3,United Kingdom,GBR,2,-6,2393,6-1 6-3,20-9,69.0% - 31.0%
+2015-08-10,Canada Masters,M,3,H,false,71,F,Andy Murray,2,United Kingdom,GBR,3,19,2379,Novak Djokovic,1,Serbia,SRB,1,-19,2585,6-4 4-6 6-3,19-9,67.9% - 32.1%
+2015-05-24,Roland Garros,G,5,C,false,46,SF,Novak Djokovic,1,Serbia,SRB,1,6,2587,Andy Murray,3,United Kingdom,GBR,3,-6,2369,6-3 6-3 5-7 5-7 6-1,19-8,70.4% - 29.6%
+2015-03-25,Miami Masters,M,3,H,false,53,F,Novak Djokovic,1,Serbia,SRB,1,5,2547,Andy Murray,3,United Kingdom,GBR,4,-5,2325,7-6(3) 4-6 6-0,18-8,69.2% - 30.8%
+2015-03-12,Indian Wells Masters,M,3,H,false,64,SF,Novak Djokovic,1,Serbia,SRB,1,5,2528,Andy Murray,4,United Kingdom,GBR,4,-5,2312,6-2 6-3,17-8,68.0% - 32.0%
+2015-01-19,Australian Open,G,5,H,false,72,F,Novak Djokovic,1,Serbia,SRB,1,8,2529,Andy Murray,6,United Kingdom,GBR,6,-7,2331,7-6(5) 6-7(4) 6-3 6-0,16-8,66.7% - 33.3%
+2014-10-27,Paris Masters,M,3,H,true,71,QF,Novak Djokovic,1,Serbia,SRB,1,6,2504,Andy Murray,8,United Kingdom,GBR,8,-6,2326,7-5 6-2,15-8,65.2% - 34.8%
+2014-09-29,Beijing,A,3,H,false,47,SF,Novak Djokovic,1,Serbia,SRB,1,5,2505,Andy Murray,6,United Kingdom,GBR,11,-5,2301,6-3 6-4,14-8,63.6% - 36.4%
