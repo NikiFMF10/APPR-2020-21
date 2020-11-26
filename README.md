@@ -14,7 +14,7 @@ Prikazal bom:
 * Število osvojenih Grand Slam turnirjev in osvojenih drugih mest na teh turnirjih,
 * Medsebojna srečanja (zmage, porazi, podlaga),   
 * Vseh turnirje, ki so se jih udeležili čez celotno kariero,
-* Rekorde, ki so jih dosegli pri največ osvojenih turnirjih
+* Številne rekorde, ki jih imajo v lasti
 
 Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevladuje sam vrh tenisa tako dolgo.
 
