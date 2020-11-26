@@ -9,10 +9,10 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2020/21
 
 Pri tem projektu bom analiziral veliko četverico teniških igralcev ("Big Four"), med katere spadajo Roger Federer, Novak Djoković, Rafael Nadal in Andy Murray.
 
-Prikazal bom: 
+Prikazal bom:
+* Število vseh osvojenih turnirjev na različnih podlagah
 * Število osvojenih Grand Slam turnirjev in osvojenih drugih mest na teh turnirjih,
-* Medsebojna srečanja (zmage, porazi),   
-* Zmage in poraze, ki so jih dosegli na različnih površinah proti takrat številki 1 svetovnega tenisa,
+* Medsebojna srečanja (zmage, porazi, podlaga),   
 * Vseh turnirje, ki so se jih udeležili čez celotno kariero,
 * Rekorde, ki so jih dosegli pri največ osvojenih turnirjih
 
