@@ -12,9 +12,9 @@ Pri tem projektu bom analiziral veliko četverico teniških igralcev ("Big Four"
 Prikazal bom: 
 * Zmage in poraze, ki so jih dosegli na različnih površinah (trda podlaga, trava, pesek), 
 * Število osvojenih Grand Slam turnirjev in osvojenih drugih mest na teh turnirjih, 
-* Medsebojna srečanja (zmage, porazi, podlaga), 
+* Medsebojna srečanja (zmage, porazi), 
 * Vseh turnirje, ki so se jih udeležili čez celotno kariero,
-* Številne rekorde, ki jih imajo v lasti
+* Rekorde, ki so jih dosegli pri največ osvojenih turnirjih
 
 Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevladuje sam vrh tenisa tako dolgo.
 
