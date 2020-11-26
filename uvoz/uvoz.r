@@ -1,6 +1,6 @@
 # 2. faza: Uvoz podatkov
 
-sl <- locale("sl", decimal_mark=",", grouping_mark=".")
+#sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 
 #Uvozimo podatke iz csv datotek
 Djoković_rekordi.data <- read.csv('podatki/Djoković Records.csv')
