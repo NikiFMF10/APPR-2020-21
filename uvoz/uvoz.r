@@ -59,174 +59,41 @@ library(tidyr)
 library(dplyr)
 library(readr)
 
-#RIVALSTVO DJOKOVIĆ - FEDERER
 
-#preberemo datoteko
-Djokovic.Federer.rivalstvo <- read_csv('podatki/Djokovic-Federer-rivalstvo.csv',
-                                       locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
+igralci <- c('Djokovic'='Novak Djokovic',
+             'Nadal'='Rafael Nadal',
+             'Murray'='Andy Murray',
+             'Federer'='Roger Federer')
 
-#dobimo
-Djokovic.Federer.rivalstvo <- Djokovic.Federer.rivalstvo[ , ObdržiStolpce]
+runde <- c('R128', 'R64', 'R32', 'R16', 'QF', 'SF', 'F', 'W', 'BR', 'S', 'G', 'RR')
 
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
+turnirji <- lapply(names(igralci), function(igralec)
+  sprintf('podatki/%s-turnirji.csv', igralec) %>%
+    read_csv(locale=locale(encoding='Windows-1250')) %>%
+    mutate(Igralec=igralci[igralec])) %>% bind_rows() %>%
+  separate(wonLost, c("Zmage", "Porazi"), sep="-") %>%
+  transmute(Igralec=factor(Igralec), Turnir=factor(name),
+            Udelezba=eventCount, Sezone=seasons,
+            NajboljsiRezultat=parse_factor(bestResult, levels=runde, ordered=TRUE),
+            ZadnjiRezultat=parse_factor(lastResult, levels=runde, ordered=TRUE),
+            Zmage=parse_number(Zmage), Porazi=parse_number(Porazi), Pokali=titles,
+            DelezZmag=parse_number(wonPct))
 
-#preimenujemo stolpce
-colnames(Djokovic.Federer.rivalstvo) <- stolpci.rivalstvo
+rivalstvo <- lapply(1:3, function(i)
+  lapply((i+1):4, function(j)
+    sprintf('podatki/%s-%s-rivalstvo.csv', names(igralci[i]), names(igralci[j])) %>%
+      read_csv(locale=locale(encoding='Windows-1250')) %>% group_by(date, round) %>% # začasno združimo,
+      mutate(Porazenec=setdiff(igralci[c(i, j)], winner_name)) %>% ungroup()) %>% # da lahko dobimo poraženca
+    bind_rows()) %>% bind_rows() %>%
+  separate(h2hWL, c("ZmageZmagovalca", "ZmagePorazenca"), sep="-") %>%
+  transmute(Datum=date, Turnir=factor(tournament), Podlaga=factor(surface),
+            Runda=parse_factor(round, levels=runde, ordered=TRUE),
+            Zmagovalec=factor(winner_name), Porazenec=factor(Porazenec),
+            Rezultat=score, ZmageZmagovalca=parse_number(ZmageZmagovalca),
+            ZmagePorazenca=parse_number(ZmagePorazenca))
 
-
-
-#RIVALSTVO DJOKOVIĆ - MURRAY
-
-#preberemo datoteko
-Djokovic.Murray.rivalstvo <- read_csv('podatki/Djokovic-Murray-rivalstvo.csv',
-                                       locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
-
-#dobimo
-Djokovic.Murray.rivalstvo <- Djokovic.Murray.rivalstvo[ , ObdržiStolpce]
-
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
-
-#preimenujemo stolpce
-colnames(Djokovic.Murray.rivalstvo) <- stolpci.rivalstvo
-
-
-
-#RIVALSTVO DJOKOVIĆ - NADAL
-
-#preberemo datoteko
-Djokovic.Nadal.rivalstvo <- read_csv('podatki/Djokovic-Nadal-rivalstvo.csv',
-                                       locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
-
-#dobimo
-Djokovic.Nadal.rivalstvo <- Djokovic.Nadal.rivalstvo[ , ObdržiStolpce]
-
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
-
-#preimenujemo stolpce
-colnames(Djokovic.Nadal.rivalstvo) <- stolpci.rivalstvo
-
-
-
-#RIVALSTVO MURRAY - FEDERER
-
-#preberemo datoteko
-Murray.Federer.rivalstvo <- read_csv('podatki/Murray-Federer-rivalstvo.csv',
-                                       locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
-
-#dobimo
-Murray.Federer.rivalstvo <- Murray.Federer.rivalstvo[ , ObdržiStolpce]
-
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
-
-#preimenujemo stolpce
-colnames(Murray.Federer.rivalstvo) <- stolpci.rivalstvo
-
-
-
-#RIVALSTVO NADAL - FEDERER
-
-#preberemo datoteko
-Nadal.Federer.rivalstvo <- read_csv('podatki/Nadal-Federer-rivalstvo.csv',
-                                       locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
-
-#dobimo
-Nadal.Federer.rivalstvo <- Nadal.Federer.rivalstvo[ , ObdržiStolpce]
-
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
-
-#preimenujemo stolpce
-colnames(Nadal.Federer.rivalstvo) <- stolpci.rivalstvo
-
-
-
-#RIVALSTVO NADAL - MURRAY
-
-#preberemo datoteko
-Nadal.Murray.rivalstvo <- read_csv('podatki/Nadal-Murray-rivalstvo.csv',
-                                    locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-#obdržimo nekatere stolpce
-ObdržiStolpce <- c('date', 'tournament', 'surface', 'round', 'winner_name', 'score', 'h2hWL')
-
-#dobimo
-Nadal.Murray.rivalstvo <- Nadal.Murray.rivalstvo[ , ObdržiStolpce]
-
-#definiramo nove stolpce
-stolpci.rivalstvo <- c('Datum', 'Turnir', 'Podlaga', 'Runda', 'Zmagovalec', 'Rezultat', 'Medsebojno')
-
-#preimenujemo stolpce
-colnames(Nadal.Murray.rivalstvo) <- stolpci.rivalstvo
-
-
-
-#PREGLED DJOKOVIĆEVEGA USPEHA SKOZI KARIERO
-
-#preberemo datoteko
-Djokovic.turnirji <- read_csv('podatki/Djokovic-turnirji.csv',
-                                    locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-
-#definiramo nove stolpce
-stolpci.turnirji <- c('Ime turnirja', 'Udeležba', 'Sezone', 'Najboljši rezultat', 'Zadnji rezultat', 
-                       'Zmage/Porazi', 'Število pokalov', 'Zmage v %')
-
-#preimenujemo stolpce
-colnames(Djokovic.turnirji) <- stolpci.turnirji
-
-
-
-#PREGLED FEDERERJEVEGA USPEHA SKOZI KARIERO
-
-#preberemo datoteko
-Federer.turnirji <- read_csv('podatki/Federer-turnirji.csv',
-                              locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-
-#definiramo nove stolpce
-stolpci.turnirji <- c('Ime turnirja', 'Udeležba', 'Sezone', 'Najboljši rezultat', 'Zadnji rezultat', 
-                      'Zmage/Porazi', 'Število pokalov', 'Zmage v %')
-
-#preimenujemo stolpce
-colnames(Federer.turnirji) <- stolpci.turnirji
-
-
-
-#PREGLED NADALOVEGA USPEHA SKOZI KARIERO
-
-#preberemo datoteko
-Nadal.turnirji <- read_csv('podatki/Nadal-turnirji.csv',
-                              locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-
-#definiramo nove stolpce
-stolpci.turnirji <- c('Ime turnirja', 'Udeležba', 'Sezone', 'Najboljši rezultat', 'Zadnji rezultat', 
-                      'Zmage/Porazi', 'Število pokalov', 'Zmage v %')
-
-#preimenujemo stolpce
-colnames(Nadal.turnirji) <- stolpci.turnirji
-
-
-
-#PREGLED MURRAYEVEGA USPEHA SKOZI KARIERO
-
-#preberemo datoteko
-Murray.turnirji <- read_csv('podatki/Murray-turnirji.csv',
-                              locale = locale(encoding = 'Windows-1250')) %>% as.data.frame()
-
-#definiramo nove stolpce
-stolpci.turnirji <- c('Ime turnirja', 'Udeležba', 'Sezone', 'Najboljši rezultat', 'Zadnji rezultat', 
-                      'Zmage/Porazi', 'Število pokalov', 'Zmage v %')
-
-#preimenujemo stolpce
-colnames(Murray.turnirji) <- stolpci.turnirji
+udelezbe <- strapply(turnirji$Sezone, "([0-9]{4})(?:-([0-9]{4}))?",
+                     function(a, b, ...) as.integer(a):as.integer(ifelse(b == "", a, b)))
+udelezba <- turnirji[lapply(1:nrow(turnirji),
+                            . %>% rep(length(udelezbe[[.]]))) %>% unlist(),
+                     c("Igralec", "Turnir")] %>% data.frame(Sezona=unlist(udelezbe))
