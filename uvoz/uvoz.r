@@ -1,5 +1,9 @@
 # 2. faza: Uvoz podatkov
 
+library(readr)
+library(tidyr)
+library(dplyr)
+
 sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 
 # Funkcija, ki uvozi občine iz Wikipedije
@@ -53,3 +57,8 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
 # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
 # fazah.
+
+
+tabela <- read_csv2('podatki/Cestni promet v Sloveniji.csv',skip=1,
+                    col_names=c('Vrsta vozila','Občine', 'Leto', 'Število vseh vozil'),
+                    locale=locale(encoding='Windows-1250'))
