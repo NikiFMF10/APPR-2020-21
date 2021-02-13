@@ -1,6 +1,6 @@
 ---
-title: "Analiza teniških igralcev"
-author: "Nikodin Sedlarević"
+title: "Poročilo pri predmetu Analiza podatkov s programom R"
+author: "Študent FMF"
 output:
   html_document: default
   pdf_document:
@@ -12,7 +12,6 @@ runtime: shiny
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-
 # Uvoz vseh potrebnih knjižnic
 source("lib/libraries.r", encoding="UTF-8")
 ```
@@ -22,10 +21,11 @@ source("lib/libraries.r", encoding="UTF-8")
 source("lib/rstudio.r", encoding="UTF-8")
 ```
 
-# Analiza velike četverice
+# Izbira teme
 
+Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 
-![](slike/Bigfour.jpg)
+![](slike/grb.png)
 
 ***
 
