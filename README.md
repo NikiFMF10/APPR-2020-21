@@ -30,7 +30,7 @@ Tabela 3 (preminuli: Število umrlih v cestnoprometnih nesrečah na 10.000 regit
 
 - `Regija` - spremenljivka: regija
 - `Leto` - spremenljivka: leto
-- `Umrli` - meritev: število umrlih na 10.000 registriranih motornih vozil
+- `Preminuli` - meritev: število umrlih na 10.000 registriranih motornih vozil
 
 Tabela 4 (osebni avtomobili: Število osebnih avtomobilov na 1000 prebivalcev po regijah):
 
