@@ -5,32 +5,49 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2020/21
 * [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/NikiFMF10/APPR-2020-21/master?urlpath=shiny/APPR-2020-21/projekt.Rmd) Shiny
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/NikiFMF10/APPR-2020-21/master?urlpath=rstudio) RStudio
 
-## Analiza velike četverice teniških igralcev
+## Analiza cestnega prometa v Sloveniji
 
-Pri tem projektu bom analiziral veliko četverico teniških igralcev ("Big Four"), med katere spadajo Roger Federer, Novak Djoković, Rafael Nadal in Andy Murray.
+V svoji projektni nalogi bom preučil nekatere ključne stvari cestnega prometa v Sloveniji.
 
-Prikazal bom:
-* Število vseh osvojenih turnirjev na različnih podlagah
-* Število osvojenih Grand Slam turnirjev in osvojenih drugih mest na teh turnirjih,
-* Medsebojna srečanja (zmage, porazi, podlaga),   
-* Vseh turnirje, ki so se jih udeležili čez celotno kariero,
-* Številne rekorde, ki jih imajo v lasti
+Analiziral bom, katera prevozna sredstva ljudje uporabljajo in kako se to razlikuje skozi daljše časovno obdobje. Poleg tega bom prikazal količinsko razliko uporabljenih cestnih vozil po regijah tudi skozi leta, prav tako pa pogledal porast uporabe osebnih in specialnih avtomobilov na alternativne vire goriva v skrajnih letih. Podobno si bom prizadeval v najdbi povezave med povprečno starostjo osebnih avtomobilov in povprečno mesečno neto plačo po regijah ter preveriti to spremembo med plačo in starostjo osebnega avtomobila v nekem daljšem časovnem intervalu. Za nameček bom pogledal še, kako se spreminja število umrlih v cestnoprometnih nesrečah na 10.000 registriranih motornih vozil po posameznih regijah. Ob pomoči analize podatkov bom izsledil navezo med deležem potnikov in prometnih nesreč, glede na uporabo določenih prevoznih sredstev.
 
-Cilj moje projektne naloge je prikazati dominantnost omenjenih igralcev skozi njihovo celotno, še trajajočo kariero in ugotoviti predvsem, zakaj ravno ta velika četverica prevladuje sam vrh tenisa tako dolgo.
+Cilji moje proučitve bodo opažanje sprememb različnih prevoznih sredstev, število umrlih, povprečni delež osebnih avtomobilov in povprečna starost le teh skozi leta. Nekatere spremembe bodo prikazane glede na regije v Sloveniji.
 
-Viri:
+#### Tabele:
+Tabela 1 (potniski promet: Število potnikov v različnih prevoznih sredstvih):
 
-https://en.wikipedia.org/wiki/Big_Four_(tennis)
+- `Vrsta_prevoza` - spremenljivka: prevozno sredstvo
+- `Leto` - spremenljivka: leto
+- `Potniki` - meritev: število potnikov v 1000
 
-https://en.wikipedia.org/wiki/Roger_Federer
+Tabela 2 (pogon in goriva: Število osebnih in specialnih avtomobilov glede na vrsto goriva in pogona):
 
-https://en.wikipedia.org/wiki/Rafael_Nadal
+- `Vrsta_pogona` - spremenljivka: Vrsta pogona osebnih avtomobilov   
+- `Leto` - spremenljivka: leto
+- `Stevilo_avtomobilov` - meritev: število avtomobilov v prometu
 
-https://en.wikipedia.org/wiki/Novak_Djokovic
+Tabela 3 (preminuli: Število umrilih v cestnoprometnih nesrečah na 10.000 regitriranih motornih vozil po regijah):
 
-https://en.wikipedia.org/wiki/Andy_Murray
+- `Regija` - spremenljivka: regija
+- `Leto` - spremenljivka: leto
+- `Umrli` - meritev: število umrlih na 10.000 registriranih motornih vozil
 
-https://www.ultimatetennisstatistics.com/
+Tabela 4 (osebni avtomobili: Število osebnih avtomobilov na 1000 prebivalcev po regijah):
+
+- `Regija` - spremenljivka: regija
+- `Leto` - spremenljivka: leto
+- `Avtomobili` - meritev: število avtomobilov na 1000 prebivalcev
+
+Tabela 5 (starost avtomobilov: Povprečna starost osebnih avtomobilov po regijah):
+
+- `Regija` - spremenljivka: regija
+- `Leto` - spremenljivka: leto
+- `Preminuli` - meritev: povprečna starost avtomobila
+
+
+##### Viri:
+* [Statistični urad Republike Slovenije] (https://pxweb.stat.si/SiStat/sl/Podrocja/Index/48/transport)
+
 
 ## Program
 
