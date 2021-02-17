@@ -26,7 +26,7 @@ Tabela 2 (pogon in goriva: Število osebnih in specialnih avtomobilov glede na v
 - `Leto` - spremenljivka: leto
 - `Stevilo_avtomobilov` - meritev: število avtomobilov v prometu
 
-Tabela 3 (preminuli: Število umrilih v cestnoprometnih nesrečah na 10.000 regitriranih motornih vozil po regijah):
+Tabela 3 (preminuli: Število umrlih v cestnoprometnih nesrečah na 10.000 regitriranih motornih vozil po regijah):
 
 - `Regija` - spremenljivka: regija
 - `Leto` - spremenljivka: leto
@@ -46,7 +46,7 @@ Tabela 5 (starost avtomobilov: Povprečna starost osebnih avtomobilov po regijah
 
 
 ##### Viri:
-* [Statistični urad Republike Slovenije] (https://pxweb.stat.si/SiStat/sl/Podrocja/Index/48/transport)
+* [Statistični urad Republike Slovenije](https://pxweb.stat.si/SiStat/sl/Podrocja/Index/48/transport)
 
 
 ## Program
