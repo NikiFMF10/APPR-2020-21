@@ -18,7 +18,7 @@ Tabela 1 (potniski promet: Število potnikov v različnih prevoznih sredstvih):
 
 - `Vrsta_prevoza` - spremenljivka: prevozno sredstvo
 - `Leto` - spremenljivka: leto
-- `Potniki` - meritev: število potnikov v 1000
+- `Stevilo_potnikov` - meritev: število potnikov v 1000
 
 Tabela 2 (pogon in goriva: Število osebnih in specialnih avtomobilov glede na vrsto goriva in pogona):
 
@@ -36,13 +36,13 @@ Tabela 4 (osebni avtomobili: Število osebnih avtomobilov na 1000 prebivalcev po
 
 - `Regija` - spremenljivka: regija
 - `Leto` - spremenljivka: leto
-- `Avtomobili` - meritev: število avtomobilov na 1000 prebivalcev
+- `Osebni_avtomobili` - meritev: število avtomobilov na 1000 prebivalcev
 
-Tabela 5 (starost avtomobilov: Povprečna starost osebnih avtomobilov po regijah):
+Tabela 5 (povprecna starost: Povprečna starost osebnih avtomobilov po regijah):
 
 - `Regija` - spremenljivka: regija
 - `Leto` - spremenljivka: leto
-- `Preminuli` - meritev: povprečna starost avtomobila
+- `Povprecna_starost_avtomobila` - meritev: povprečna starost avtomobila
 
 
 ##### Viri:
