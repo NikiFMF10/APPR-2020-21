@@ -69,4 +69,56 @@ zemljevid$NAME_1 <- c("Gorenjska", "Goriška","Jugovzhodna", "Koroška", "Primor
 zemljevid <- fortify(zemljevid)         
 
 
+
+# 1.ZEMLJEVID: POVPREČNO NETO PLAČA V LETU 2018
+
+zemljevid_neto_placa <- ggplot() + geom_polygon(data=left_join(zemljevid, neto_placa2018, by=c("NAME_1"="Regija")),
+                                           aes(x=long, y=lat, group=group, fill=Neto_placa)) +
+  geom_line() + 
+  theme(axis.text.x=element_blank(), axis.ticks.x=element_blank(), axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  guides(fill=guide_colorbar(title="Plača")) +
+  ggtitle("Povprečna neto plača po regijah leta 2018") +
+  labs(x = " ") +
+  labs(y = " ") +
+  scale_fill_gradient(low = "white", high = "red",
+                      space = "Lab", na.value = "#e0e0d1", guide = "black",
+                      aesthetics = "fill")
+
+
+
+# 2.ZEMLJEVID: POVPREČNA STAROST OSEBNEGA AVTOMOBILA GLEDE NA REGIJO
+
+zemljevid_povprecna_starost <- ggplot() + geom_polygon(data=left_join(zemljevid, povprecna_starost2018, by=c("NAME_1"= "Regija")),
+                                             aes(x=long, y=lat, group=group, fill=Povprecna_starost_avtomobila)) +
+  geom_line() + 
+  theme(axis.text.x=element_blank(), axis.ticks.x=element_blank(), axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  guides(fill=guide_colorbar(title="Povprečna starost avtomobila")) +
+  ggtitle("Povprečna starost avtomobila po regijah leta 2018") +
+  labs(x = " ") +
+  labs(y = " ") +
+  scale_fill_gradient(low = "white", high = "red",
+                      space = "Lab", na.value = "#e0e0d1", guide = "black",
+                      aesthetics = "fill")
+
+
+cor(povprecna_starost2018$Povprecna_starost_avtomobila, neto_placa2018$Neto_placa)
+
+
+osebni_avtomobili1 <- filter(osebni_avtomobili, Leto=='2018')
+
+zemljevid_osebni_avtomobili <- ggplot() + geom_polygon(data=left_join(zemljevid, osebni_avtomobili1, by=c("NAME_1"= "Regija")),
+                                                aes(x=long, y=lat, group=group, fill=Osebni_avtomobili)) +
+  geom_line() + 
+  theme(axis.text.x=element_blank(), axis.ticks.x=element_blank(), axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  guides(fill=guide_colorbar(title="Število avtomobilov")) +
+  ggtitle("Število avtomobilov na 1000 prebivalcev leta 2018") +
+  labs(x = " ") +
+  labs(y = " ") +
+  scale_fill_gradient(low = "white", high = "red",
+                      space = "Lab", na.value = "#e0e0d1", guide = "black",
+                      aesthetics = "fill")
+
  
