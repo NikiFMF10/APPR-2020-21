@@ -120,5 +120,3 @@ zemljevid_osebni_avtomobili <- ggplot() + geom_polygon(data=left_join(zemljevid,
   scale_fill_gradient(low = "white", high = "red",
                       space = "Lab", na.value = "#e0e0d1", guide = "black",
                       aesthetics = "fill")
-
- 
