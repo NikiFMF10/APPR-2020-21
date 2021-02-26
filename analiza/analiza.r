@@ -90,7 +90,7 @@ graf_osebni_avto <- function(cifra) {
   ggplot(osebni_avtomobili %>% filter(Leto==cifra), aes(x=Regija, y=Osebni_avtomobili, fill=factor(Regija))) + 
     ylim(0, 650) + geom_bar(stat = "identity") +
     xlab("Regija") + ylab("Število osebnih avtomobilov") +   
-    theme(axis.text.x = element_text(angle = 90, size = 8)) +
+    theme(axis.text.x = element_text(angle = 90, size = 8, hjust = 1, vjust = 0.5)) +
     labs(fill='Regija')
   
 }
